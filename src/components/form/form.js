@@ -65,6 +65,8 @@ const HomeForm = () => {
                     <input
                         placeholder='ex - 300'
                         name='Amount'
+                        type='number'
+                        min='1'
                         value={amount}
                         onChange={(e) => setAmount(e.target.value)}
                         required
