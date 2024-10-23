@@ -1,0 +1,19 @@
+button, input[type="submit"]{
+    padding: 13px 40px;
+    border-radius: 5px;
+    font-family: $font-primary;
+    font-weight: $semi-bold;
+    @include responsive-font(18, 20);
+    border: 1px solid $white;
+    color: $black;
+    background-color: $white;
+    transition: $transition;
+    cursor: pointer;
+    background-color: $green;
+        color: $white;
+        border-color: $green;
+
+        &:hover {
+            background-color: $green-hover;
+        }
+}
