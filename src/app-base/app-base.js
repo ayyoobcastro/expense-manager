@@ -14,7 +14,7 @@ const AppBase = () => {
     <>
       <QueryClientProvider client={queryClient}>
         <div className='castro__app'>
-        <Navigation></Navigation>
+            <Navigation></Navigation>
         </div>
       </QueryClientProvider>
 

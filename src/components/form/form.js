@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 
-const HomeForm = ({fetchData}) => {
+const HomeForm = () => {
 
     const [title, setTitle] = useState("");
     const [amount, setAmount] = useState("");
@@ -18,7 +18,7 @@ const HomeForm = ({fetchData}) => {
 
         const formData = new FormData(e.target);
 
-        fetch("https://script.google.com/macros/s/AKfycbwJd-T1QCTo7BFHYxiqQVt_Mt_LXI1oPclym7PMkCvCsyby3cBdWpl9_bnHSsKAy6L1/exec", 
+        fetch("https://script.google.com/macros/s/AKfycbyEkm-Oy1btmbUz4oZ5GPkS8ZhA5wxd_S75J-D7Ts9ECITYHdfJlla_miJ_IK3t6QTz/exec", 
             {
                 method: "POST",
                 body: formData,
@@ -28,7 +28,7 @@ const HomeForm = ({fetchData}) => {
             console.log(data);
             setTitle("");
             setAmount("");
-            fetchData();
+            // fetchData();
         })
         .catch((error)=>{
             console.log(error)

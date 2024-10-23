@@ -24,21 +24,21 @@ $bold: 600;
 $extrabold: 700;
 
 
-@use 'sass:math';
-// Mixin for responsive font size
-@mixin responsive-font($min-font, $max-font, $min-vw: 320, $max-vw: 1440) {
-    // Use math.div() to avoid deprecation warnings
-    $slope: math.div(($max-font - $min-font), ($max-vw - $min-vw));
-    $intercept: $min-font - $slope * $min-vw;
+// @use 'sass:math';
+// // Mixin for responsive font size
+// @mixin responsive-font($min-font, $max-font, $min-vw: 320, $max-vw: 1440) {
+//     // Use math.div() to avoid deprecation warnings
+//     $slope: math.div(($max-font - $min-font), ($max-vw - $min-vw));
+//     $intercept: $min-font - $slope * $min-vw;
   
-    font-size: calc(#{$intercept}px + #{$slope * 100}vw);
-  }
+//     font-size: calc(#{$intercept}px + #{$slope * 100}vw);
+//   }
   
-  // Mixin for responsive line-height
-  @mixin responsive-leading($min-font, $max-font, $min-vw: 320, $max-vw: 1440) {
-    $slope: math.div(($max-font - $min-font), ($max-vw - $min-vw));
-    $intercept: $min-font - $slope * $min-vw;
+//   // Mixin for responsive line-height
+//   @mixin responsive-leading($min-font, $max-font, $min-vw: 320, $max-vw: 1440) {
+//     $slope: math.div(($max-font - $min-font), ($max-vw - $min-vw));
+//     $intercept: $min-font - $slope * $min-vw;
   
-    line-height: calc(#{$intercept}px + #{$slope * 100}vw);
-  }
+//     line-height: calc(#{$intercept}px + #{$slope * 100}vw);
+//   }
   
